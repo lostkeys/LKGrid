@@ -1,0 +1,86 @@
+/* line 1, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/reset */
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+/* line 5, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/reset */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 30, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.row {
+  margin-left: -10px;
+  margin-right: -10px; }
+  /* line 4, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  /* line 8, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+  .row:after {
+    clear: both; }
+
+/* line 37, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.col, .span1of5, .span2of5, .span3of5, .span4of5, .span1of7, .span2of7, .span3of7, .span4of7 {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* line 49, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.wrap {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+  /* line 4, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+  .wrap:before, .wrap:after {
+    content: " ";
+    display: table; }
+  /* line 8, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+  .wrap:after {
+    clear: both; }
+
+/* line 60, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.span1of5 {
+  width: 20%; }
+
+/* line 63, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.span2of5 {
+  width: 40%; }
+
+/* line 66, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.span3of5 {
+  width: 60%; }
+
+/* line 69, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.span4of5 {
+  width: 80%; }
+
+/* line 74, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.span1of7 {
+  width: 14.28571%; }
+
+/* line 77, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.span2of7 {
+  width: 28.57143%; }
+
+/* line 80, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.span3of7 {
+  width: 42.85714%; }
+
+/* line 83, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.span4of7 {
+  width: 57.14286%; }
+
+/* line 88, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.offset1of5 {
+  margin-left: 20%; }
+
+/* line 91, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.offset1of7 {
+  margin-left: 14.28571%; }
+
+/* line 94, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/grid */
+.offset2of7 {
+  margin-left: 28.57143%; }
