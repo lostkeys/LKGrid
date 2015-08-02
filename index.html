@@ -9,86 +9,52 @@
   	body {
 /*     	padding:20px; */
   	}
-		.item {
-  		background-color: #dedede;
-  		padding: 10px 0;
-  		margin-bottom: 10px;
-		}
 	</style>
 </head>
 <body>
   
 <div class="wrap">
-  <h1>Grid examples</h1>
+  <h1>LK Grid</h1>
+ 
   
-  <h2>Test</h2>
+  <h2>Basic grid examples</h2>
   <div class="row">
-    <div class="span2of5"><div class="item">.span2of5</div></div>
-    <div class="span3of5"><div class="item">.span3of5</div></div>
+    <div class="xs3of3"><div class="item">.xs3of3</div></div>
+  </div>
+
+  
+  <div class="row">
+    <div class="xs2of3"><div class="item">.xs2of3</div></div>
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
   </div>
   <div class="row">
-    <div class="span4of5 offset1of5"><div class="item">.span2of5</div></div>
+    <div class="xs2of3 offset-xs1of3"><div class="item">.xs2of3 .offset-xs1of3</div></div>
   </div>  
   <div class="row">
-    <div class="span1of5"><div class="item">.span1of5</div></div>
-    <div class="span1of5"><div class="item">.span1of5</div></div>
-    <div class="span1of5"><div class="item">.span1of5</div></div>
-    <div class="span1of5"><div class="item">.span1of5</div></div>
-    <div class="span1of5"><div class="item">.span1of5</div></div>            
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
   </div>
 
   
-  <h2>Test</h2>
+  <h2>Excess columns</h2>
   <div class="row">
-    <div class="span2of7"><div class="item">.span2of7</div></div>
-    <div class="span4of7"><div class="item">.span4of7</div></div>
-    <div class="span1of7"><div class="item">.span1of7</div></div>    
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+    <div class="xs1of3"><div class="item">.xs1of3</div></div>                    
+  </div>
+  
+  
+  <h2>Responsive test</h2>
+  <div class="row">
+    <div class="xss1of2 sm2of5 md2of7"><div class="item">.xss1of2 .sm2of5 .md2of7</div></div>
+    <div class="xss1of2 sm3of5 md5of7"><div class="item">.xss1of2 .sm3of5 .md5of7</div></div>
   </div>
   <div class="row">
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>            
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>            
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-  </div>
-
-  <h2>Test</h2>
-  <div class="row">
-    <div class="span3of7 offset2of7"><div class="item">3 of 7 offset2of7</div></div>
-
-  </div>
-  <div class="row">
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>            
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>            
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-  </div>
-
-
-  <h2>Test</h2>
-  <div class="row">
-    <div class="span2of7 offset1of7"><div class="item">2 of 7 offset1of7</div></div>
-    <div class="span4of7">
-      <div class="row">
-        <div class="span1of5"><div class="item">1 of 5</div></div>
-        <div class="span2of5"><div class="item">2 of 5</div></div>
-        <div class="span2of5"><div class="item">2 of 5</div></div>                
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>            
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>
-    <div class="span1of7"><div class="item">1 of 7</div></div>            
-    <div class="span1of7"><div class="item">1 of 7</div></div>
+    <div class="sm3of5 offset-sm1of5 md5of7 offset-md1of7"><div class="item">.sm3of5 .offset-sm1of5 .md5of7 .offset-md1of7</div></div>
   </div>
 
 

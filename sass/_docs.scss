@@ -1,0 +1,24 @@
+//
+// USAGE OF THE GRID FRAMEWORK
+// 
+
+
+// The default base grid. Is defined outside of mediaqueries to support older
+// browsers. In a responsive usecase only 1 to 3 columns would be used
+@include make-grid("xss",2);
+@include make-grid("xs",3);
+
+// The default base grid.
+@media (min-width: 700px) {    
+  @include make-grid("sm",5);
+}
+@media (min-width: 1000px) { 
+  @include make-grid("md",7);       
+}
+
+
+.item {
+  background-color: #dedede;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
