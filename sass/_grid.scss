@@ -1,4 +1,5 @@
-// General mixins
+// REQUIRED MIXINS
+// Can be placed anywhere.
 @mixin clearfix() {
   &:before,
   &:after {
@@ -10,9 +11,11 @@
   }
 }
 
-
-// Variables
+// VARIABLES
+// Can be placed anywhere
 $gutter: 20px;
+
+
 
 // Grid mixins
 //
@@ -45,7 +48,7 @@ $gutter: 20px;
   padding-right: ($gutter / 2);
 }
 
-// Wrap same as container in bootstrap
+// Wrap is same as container in bootstrap.
 .wrap {
   @include clearfix;  
   margin-right: auto;
@@ -53,7 +56,6 @@ $gutter: 20px;
   padding-left:  ($gutter / 2);
   padding-right: ($gutter / 2);
 }
-
 
 // Col classes. 
 // Todo, some source map of cols for faster implementation
