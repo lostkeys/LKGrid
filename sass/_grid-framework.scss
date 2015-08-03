@@ -2,6 +2,15 @@
 // LKgrid framework
 // Copyright 2015 Fredrik Danielsson, Lost & Keys AB
 // 
+// Version 1.1
+//
+//
+// USAGE
+//
+// Create a grid using make-grid(). The function takes two parameters: prefix
+// and total number of columns. Example: @include make-grid("xs",3);
+// This will make a grid with the classes .xs1of3 to .xs3of3
+//
 
 
 
