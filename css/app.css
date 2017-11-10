@@ -1,167 +1,260 @@
-/* line 1, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_reset.scss */
-*, *:after, *:before {
-  box-sizing: border-box; }
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-/* line 5, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_reset.scss */
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
-/* line 80, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
 .row {
-  margin-left: -10px;
-  margin-right: -10px; }
-  /* line 23, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .row:before,
-  .row:after {
-    content: " ";
-    display: table; }
-  /* line 27, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .row:after {
-    clear: both; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-/* line 87, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-.col, .xss1of2, .xss2of2, .xs1of3, .xs2of3, .xs3of3, .sm1of5, .sm2of5, .sm3of5, .sm4of5, .sm5of5, .md1of7, .md2of7, .md3of7, .md4of7, .md5of7, .md6of7, .md7of7 {
-  position: relative;
-  min-height: 1px;
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%; }
+body {
+  padding: 1rem;
+}
 
-/* line 101, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-.wrap {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px; }
-  /* line 23, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .wrap:before,
-  .wrap:after {
-    content: " ";
-    display: table; }
-  /* line 27, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .wrap:after {
-    clear: both; }
-
-/* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
 .xss1of2 {
-  width: 50%; }
+  width: 50%;
+  min-height: 1px;
+}
 
-/* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-.offset-xss1of2 {
-  margin-left: 50%; }
+.xss1of2l {
+  margin-left: 50%;
+}
 
-/* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
+.xss1of2r {
+  margin-left: 50%;
+}
+
 .xss2of2 {
-  width: 100%; }
+  width: 100%;
+  min-height: 1px;
+}
 
-/* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-.offset-xss2of2 {
-  margin-left: 100%; }
+.xss2of2l {
+  margin-left: 100%;
+}
 
-/* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
+.xss2of2r {
+  margin-left: 100%;
+}
+
 .xs1of3 {
-  width: 33.33333%; }
+  width: 33.33333333%;
+  min-height: 1px;
+}
 
-/* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-.offset-xs1of3 {
-  margin-left: 33.33333%; }
+.xs1of3l {
+  margin-left: 33.33333333%;
+}
 
-/* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
+.xs1of3r {
+  margin-left: 33.33333333%;
+}
+
 .xs2of3 {
-  width: 66.66667%; }
+  width: 66.66666667%;
+  min-height: 1px;
+}
 
-/* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-.offset-xs2of3 {
-  margin-left: 66.66667%; }
+.xs2of3l {
+  margin-left: 66.66666667%;
+}
 
-/* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
+.xs2of3r {
+  margin-left: 66.66666667%;
+}
+
 .xs3of3 {
-  width: 100%; }
+  width: 100%;
+  min-height: 1px;
+}
 
-/* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-.offset-xs3of3 {
-  margin-left: 100%; }
+.xs3of3l {
+  margin-left: 100%;
+}
+
+.xs3of3r {
+  margin-left: 100%;
+}
 
 @media (min-width: 700px) {
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
   .sm1of5 {
-    width: 20%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-sm1of5 {
-    margin-left: 20%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
+    width: 20%;
+    min-height: 1px;
+  }
+
+  .sm1of5l {
+    margin-left: 20%;
+  }
+
+  .sm1of5r {
+    margin-left: 20%;
+  }
+
   .sm2of5 {
-    width: 40%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-sm2of5 {
-    margin-left: 40%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
+    width: 40%;
+    min-height: 1px;
+  }
+
+  .sm2of5l {
+    margin-left: 40%;
+  }
+
+  .sm2of5r {
+    margin-left: 40%;
+  }
+
   .sm3of5 {
-    width: 60%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-sm3of5 {
-    margin-left: 60%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
+    width: 60%;
+    min-height: 1px;
+  }
+
+  .sm3of5l {
+    margin-left: 60%;
+  }
+
+  .sm3of5r {
+    margin-left: 60%;
+  }
+
   .sm4of5 {
-    width: 80%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-sm4of5 {
-    margin-left: 80%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
+    width: 80%;
+    min-height: 1px;
+  }
+
+  .sm4of5l {
+    margin-left: 80%;
+  }
+
+  .sm4of5r {
+    margin-left: 80%;
+  }
+
   .sm5of5 {
-    width: 100%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-sm5of5 {
-    margin-left: 100%; } }
+    width: 100%;
+    min-height: 1px;
+  }
+
+  .sm5of5l {
+    margin-left: 100%;
+  }
+
+  .sm5of5r {
+    margin-left: 100%;
+  }
+}
 
 @media (min-width: 1000px) {
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
   .md1of7 {
-    width: 14.28571%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-md1of7 {
-    margin-left: 14.28571%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .md2of7 {
-    width: 28.57143%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-md2of7 {
-    margin-left: 28.57143%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .md3of7 {
-    width: 42.85714%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-md3of7 {
-    margin-left: 42.85714%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .md4of7 {
-    width: 57.14286%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-md4of7 {
-    margin-left: 57.14286%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .md5of7 {
-    width: 71.42857%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-md5of7 {
-    margin-left: 71.42857%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .md6of7 {
-    width: 85.71429%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-md6of7 {
-    margin-left: 85.71429%; }
-  /* line 59, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .md7of7 {
-    width: 100%; }
-  /* line 67, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_grid-framework.scss */
-  .offset-md7of7 {
-    margin-left: 100%; } }
+    width: 14.28571429%;
+    min-height: 1px;
+  }
 
-/* line 20, /Volumes/Macintosh HD/Users/fredrik/Sites/grid/sass/_docs.scss */
+  .md1of7l {
+    margin-left: 14.28571429%;
+  }
+
+  .md1of7r {
+    margin-left: 14.28571429%;
+  }
+
+  .md2of7 {
+    width: 28.57142857%;
+    min-height: 1px;
+  }
+
+  .md2of7l {
+    margin-left: 28.57142857%;
+  }
+
+  .md2of7r {
+    margin-left: 28.57142857%;
+  }
+
+  .md3of7 {
+    width: 42.85714286%;
+    min-height: 1px;
+  }
+
+  .md3of7l {
+    margin-left: 42.85714286%;
+  }
+
+  .md3of7r {
+    margin-left: 42.85714286%;
+  }
+
+  .md4of7 {
+    width: 57.14285714%;
+    min-height: 1px;
+  }
+
+  .md4of7l {
+    margin-left: 57.14285714%;
+  }
+
+  .md4of7r {
+    margin-left: 57.14285714%;
+  }
+
+  .md5of7 {
+    width: 71.42857143%;
+    min-height: 1px;
+  }
+
+  .md5of7l {
+    margin-left: 71.42857143%;
+  }
+
+  .md5of7r {
+    margin-left: 71.42857143%;
+  }
+
+  .md6of7 {
+    width: 85.71428571%;
+    min-height: 1px;
+  }
+
+  .md6of7l {
+    margin-left: 85.71428571%;
+  }
+
+  .md6of7r {
+    margin-left: 85.71428571%;
+  }
+
+  .md7of7 {
+    width: 100%;
+    min-height: 1px;
+  }
+
+  .md7of7l {
+    margin-left: 100%;
+  }
+
+  .md7of7r {
+    margin-left: 100%;
+  }
+}
+
 .item {
   background-color: #dedede;
-  padding: 10px 0;
-  margin-bottom: 10px; }
+  border: 1px solid red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .5rem;
+  margin-bottom: .5rem;
+}
+
+.col {
+  border: 1px solid red;
+}
+

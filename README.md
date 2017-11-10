@@ -10,6 +10,10 @@ Inside `sass/_docs.scss` you'll find how to use the grid.
 
 `index.html` contains a simple test page.
 
+## Build
+
+Build CSS using webpack with command `npm run watch`.
+
 ## License
 
 Released under the MIT license

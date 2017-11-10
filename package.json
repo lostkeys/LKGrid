@@ -1,0 +1,28 @@
+{
+  "name": "lk-grid",
+  "version": "2.0.0",
+  "description": "Just another Grid System",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostkeys/LKGrid.git"
+  },
+  "author": "Fredrik Danielsson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lostkeys/LKGrid/issues"
+  },
+  "homepage": "https://github.com/lostkeys/LKGrid#readme",
+  "devDependencies": {
+    "laravel-mix": "^1.6.1"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  }
+}

@@ -1,7 +1,7 @@
 //
 // LKgrid framework
 // Copyright 2015 Fredrik Danielsson, Lost & Keys AB
-// 
+//
 // Version 1.1
 //
 //
@@ -12,33 +12,12 @@
 // This will make a grid with the classes .xs1of3 to .xs3of3
 //
 
-
-
-// -----------------------------------------------------------------------------
-// REQUIRED MIXINS
-// Can be removed if a clearfix exists elsewhere
-
-@mixin clearfix() {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
-}
-
-
-
 // -----------------------------------------------------------------------------
 // VARIABLES
 // Can be placed anywhere
-// 
+//
 
 $gutter: 20px !default;
-
-
 
 // -----------------------------------------------------------------------------
 // Grid mixins
@@ -58,19 +37,22 @@ $gutter: 20px !default;
 // Naming becomes 'xx1of5'
 @mixin make-col($prefix, $col, $totalcols) {
   .#{$prefix}#{$col}of#{$totalcols} {
-    @extend .col;
-    width: 100% / ($totalcols/$col);      
+    width: 100% / ($totalcols/$col);
+
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
   }
 }
 // Generate each offset referenced from make-grid()
 // Naming becomes 'offset-xx1of5'
 @mixin make-offset-col($prefix, $col, $totalcols) {
-  .offset-#{$prefix}#{$col}of#{$totalcols} {
+  .#{$prefix}#{$col}of#{$totalcols}l {
+    margin-left: 100% / ($totalcols/$col);
+  }
+  .#{$prefix}#{$col}of#{$totalcols}r {
     margin-left: 100% / ($totalcols/$col);
   }
 }
-
-
 
 // -----------------------------------------------------------------------------
 // GENERAL CLASSES
@@ -78,30 +60,5 @@ $gutter: 20px !default;
 
 // Row styles
 .row {
-  @include clearfix();
-  margin-left:  ($gutter / -2);
-  margin-right: ($gutter / -2);
-}
-
-// Common column styles
-.col {
-  position: relative;  
-  // Prevent columns from collapsing when empty
-  min-height: 1px;
-  // Float columns
-  float: left;  
-  // Inner gutter via padding 
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);  
-  // Use this width if no default classes are used.
-  width:100%;
-}
-
-// Wrap is same as container in bootstrap.
-.wrap {
-  @include clearfix;  
-  margin-right: auto;
-  margin-left: auto;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
+  display: flex;
 }
