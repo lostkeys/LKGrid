@@ -13,13 +13,6 @@
 //
 
 // -----------------------------------------------------------------------------
-// VARIABLES
-// Can be placed anywhere
-//
-
-$gutter: 20px !default;
-
-// -----------------------------------------------------------------------------
 // Grid mixins
 //
 
@@ -30,27 +23,32 @@ $gutter: 20px !default;
   @for $col from 1 through $totalcols {
     @include make-col($prefix, $col, $totalcols);
     @include make-offset-col($prefix, $col, $totalcols);
+    @include make-order($prefix, $col);
   }
 }
 
 // Generate each column referenced from make-grid()
 // Naming becomes 'xx1of5'
 @mixin make-col($prefix, $col, $totalcols) {
-  .#{$prefix}#{$col}of#{$totalcols} {
+  .grid-#{$prefix}-#{$col} {
     width: 100% / ($totalcols/$col);
 
-    // Prevent columns from collapsing when empty
-    min-height: 1px;
+    min-height: 1px; // Prevent columns from collapsing when empty
+    box-sizing: border-box;
   }
 }
 // Generate each offset referenced from make-grid()
 // Naming becomes 'offset-xx1of5'
 @mixin make-offset-col($prefix, $col, $totalcols) {
-  .#{$prefix}#{$col}of#{$totalcols}l {
+  .grid-#{$prefix}-offset-#{$col} {
     margin-left: 100% / ($totalcols/$col);
   }
-  .#{$prefix}#{$col}of#{$totalcols}r {
-    margin-left: 100% / ($totalcols/$col);
+}
+
+// Generate order classes.
+@mixin make-order($prefix, $col) {
+  .grid-#{$prefix}-order-#{$col} {
+    order: $col;
   }
 }
 
@@ -59,6 +57,9 @@ $gutter: 20px !default;
 //
 
 // Row styles
-.row {
-  display: flex;
+@mixin make-grid-container {
+  .grid-container  {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

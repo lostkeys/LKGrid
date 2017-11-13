@@ -16,45 +16,38 @@
 <div class="wrap">
   <h1>LK Grid</h1>
 
-
   <h2>Basic grid examples</h2>
-  <div class="row">
-    <div class="xs3of3"><div class="item">.xs3of3</div></div>
+  <div class="grid-container">
+    <div class="grid-xs-12"><div class="item">grid-xs-12</div></div>
   </div>
-
-
-  <div class="row">
-    <div class="xs2of3"><div class="item">.xs2of3</div></div>
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+  <div class="grid-container">
+    <div class="grid-xs-8"><div class="item">grid-xs-8</div></div>
+    <div class="grid-xs-4"><div class="item">grid-xs-4</div></div>
   </div>
-  <div class="row">
-    <div class="xs2of3 xs1of3l"><div class="item">.xs2of3 .xs1of3l</div></div>
+  <div class="grid-container">
+    <div class="grid-xs-6 grid-xs-offset-3"><div class="item">grid-xs-6 grid-xs-offset-3</div></div>
   </div>
-  <div class="row">
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
+  <div class="grid-container">
+    <div class="grid-xs-2"><div class="item">grid-xs-2</div></div>
+    <div class="grid-xs-3"><div class="item">grid-xs-3</div></div>
+    <div class="grid-xs-5"><div class="item">grid-xs-5</div></div>
+    <div class="grid-xs-2"><div class="item">grid-xs-2</div></div>
   </div>
-
-
-  <h2>Excess columns</h2>
-  <div class="row">
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
-    <div class="xs1of3"><div class="item">.xs1of3</div></div>
-  </div>
-
 
   <h2>Responsive test</h2>
-  <div class="row">
-    <div class="xss1of2 sm2of5 md2of7"><div class="item">.xss1of2 .sm2of5 .md2of7</div></div>
-    <div class="xss1of2 sm3of5 md5of7"><div class="item">.xss1of2 .sm3of5 .md5of7</div></div>
+  <div class="grid-container">
+    <div class="grid-xs-12 grid-sm-4 grid-md-7"><div class="item">grid-xs-12 grid-sm-4 grid-md-7</div></div>
+    <div class="grid-xs-12 grid-sm-8 grid-md-5"><div class="item">grid-xs-12 grid-sm-8 grid-md-5</div></div>
   </div>
-  <div class="row">
-    <div class="xs3of3 sm3of5 sm1of5l md5of7 md1of7l"><div class="item">.xs3of3 .sm3of5 .sm1of5l .md5of7 .md1of7l</div></div>
+  <div class="grid-container">
+    <div class="grid-xs-12 grid-sm-10 grid-sm-offset-1 grid-md-8 grid-md-offset-2"><div class="item">grid-xs-12 grid-sm-10 grid-sm-offset-1 grid-md-8 grid-md-offset-2</div></div>
+  </div>
+
+  <h2>Ordering</h2>
+  <div class="grid-container">
+    <div class="grid-xs-4 grid-sm-order-12 grid-md-order-6"><div class="item">A</div></div>
+    <div class="grid-xs-4 grid-sm-order-6 grid-md-order-1"><div class="item">B</div></div>
+    <div class="grid-xs-4 grid-sm-order-1 grid-md-order-12"><div class="item">C</div></div>
   </div>
 
 </div>
