@@ -644,6 +644,10 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: .5rem;
-  margin-bottom: .5rem;
+  margin: 0;
+}
+
+.grid-container {
+  background-color: #efefef;
 }
 
